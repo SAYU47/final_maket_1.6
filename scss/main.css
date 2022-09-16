@@ -32,8 +32,7 @@
 
 body {
   height: 100%;
-  max-width: 1440px;
-  min-width: 300px;
+  width: 100%;
   margin: 0 auto;
   background: #f2f2f2;
 }
@@ -161,6 +160,7 @@ h1::before {
   padding-left: 34px;
   padding-right: 30px;
   background: #F8F8F8;
+  overflow-x: hidden;
 }
 
 .services-nav__list {
@@ -783,9 +783,6 @@ h2 {
   }
 }
 @media (max-width: 540px) {
-  body {
-    overflow-x: hidden;
-  }
   .sidebar-logo__container {
     background-color: #fff;
   }
@@ -840,10 +837,10 @@ h2 {
   }
   .brand__list {
     display: flex;
+    min-width: 100%;
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 15px;
-    overflow: visible;
   }
   .show-all-btn {
     display: none;
@@ -906,7 +903,6 @@ h2 {
 
 .swiper-pagination {
   position: relative !important;
-  z-index: 0 !important;
 }
 
 .swiper-pagination-bullet {

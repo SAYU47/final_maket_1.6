@@ -40,8 +40,10 @@ $font-stack: 'TT Lakes';
      list-style: none;
  }
 body{
+position: relative;
 height: 100%;
-width: 100%;
+max-width: 1440px;
+min-width: 300px;
 margin: 0 auto;
 background: #f2f2f2;
 }

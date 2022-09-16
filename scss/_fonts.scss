@@ -34,8 +34,8 @@ $font-stack: 'TT Lakes';
      margin: 0;
      padding: 0;
      text-decoration: none;
-     color: $primary-color;
-     font-family: $color-blue-black;
+     color: $color-blue-black;
+     font-family: $font-stack;
      font-weight: bold;
      list-style: none;
  }
@@ -46,5 +46,6 @@ min-width: 300px;
 margin: 0 auto;
 background: #f2f2f2;
 }
+
 
 

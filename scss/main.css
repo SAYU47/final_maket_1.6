@@ -70,7 +70,7 @@ header {
   left: 11px;
   width: 10px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .menu-burger-btn span:nth-last-child(1) {
   position: absolute;
@@ -160,7 +160,7 @@ h1::before {
 .main-container {
   padding-left: 34px;
   padding-right: 30px;
-  background: #f8f8f8;
+  background: #F8F8F8;
 }
 
 .services-nav__list {
@@ -387,7 +387,7 @@ h2 {
   background: #fff;
   align-items: center;
   border-radius: 3px;
-  border: 1px solid #eaeaea;
+  border: 1px solid #EAEAEA;
   height: 72px;
   min-width: 210px;
   width: 100%;
@@ -538,10 +538,10 @@ h2 {
   text-align: right;
   letter-spacing: -0.15px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   display: block;
   padding: 4px 40px 4px 12px;
-  color: #FFFFFF;
+  color: #fff;
   background: #FF3E79;
   border-radius: 16px;
   border: 2px solid #FF3E79;
@@ -563,7 +563,7 @@ h2 {
 }
 .price-subitem button:hover {
   color: #FF3E79;
-  background: #FFFFFF;
+  background: #fff;
 }
 .price-subitem button:hover::after {
   border-bottom: 2px solid #FF3E79;
@@ -577,7 +577,7 @@ h2 {
 }
 .price-list li {
   border-radius: 3px;
-  border: 1px solid #eaeaea;
+  border: 1px solid #EAEAEA;
 }
 
 .price-item {
@@ -588,7 +588,7 @@ h2 {
   margin-left: 320px;
   display: flex;
   justify-content: space-between;
-  background: #f8f8f8;
+  background: #F8F8F8;
 }
 .footer-container p {
   flex-wrap: wrap;
@@ -637,6 +637,7 @@ h2 {
     height: 87px;
     justify-content: end;
     align-items: center;
+    background: #fff;
   }
   .footer-container {
     margin-left: 0;
@@ -782,6 +783,9 @@ h2 {
   }
 }
 @media (max-width: 540px) {
+  body {
+    overflow-x: hidden;
+  }
   .sidebar-logo__container {
     background-color: #fff;
   }

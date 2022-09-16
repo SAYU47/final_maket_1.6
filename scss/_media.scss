@@ -13,6 +13,7 @@
         height: 87px;
         justify-content: end;
         align-items: center;
+        background: $color-white ;
     }
     .footer-container{
         margin-left: 0;  
@@ -157,6 +158,7 @@ cursor: pointer;
       }
       .brand__list{
         grid-template-columns: repeat(3, 3fr);
+        
       } 
       .repair__list{
         min-width: 800px;
@@ -166,6 +168,9 @@ cursor: pointer;
       }    
     }
 @media (max-width: 540px){
+    body{
+        overflow-x: hidden;
+    }
     .sidebar-logo__container{
         background-color: $color-white;
     }

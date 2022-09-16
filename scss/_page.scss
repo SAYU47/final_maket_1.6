@@ -1,5 +1,7 @@
 main{
     margin-left: 320px;
+    overflow-x: hidden;
+    
 }
 .servise{
     margin-bottom: 50px;
@@ -15,7 +17,7 @@ line-height: 24px;
 
 letter-spacing: -0.2px;
 
-color: #1B1C21;
+color: $color-blue-black;
 }
 .menu__list-container{
     max-width: 1440px;
@@ -35,7 +37,7 @@ font-family: 'TT Lakes';
 font-size: 28px;
 line-height: 40px;
 letter-spacing: -0.6px;
-color: #1B1C21;
+color: $color-blue-black;
 margin-left: 35px;
 position: relative;
 &::before{
@@ -43,7 +45,7 @@ content: '';
 display: inline-block;
 width: 3px;
 height: 40px;
-background: #41F6D7;
+background: $color-light-turquoise;
 position: absolute;
 left: -35px;
 }
@@ -61,14 +63,17 @@ img{
 }
 span{
     order: -1;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease ;
     &:hover{
-     border-bottom: 2px solid #41F6D7;
+     border-bottom: 2px solid $color-light-turquoise;
     }   
 }
 }
 .main-container{
-    margin-left: 34px;
-    margin-right: 30px;
+    padding-left: 34px;
+    padding-right: 30px;
+    background: $color-smoky-white;
 }
 
 .services-nav__list{
@@ -77,24 +82,28 @@ span{
     flex-wrap: wrap;
     margin-bottom: 20px;
     min-width: 0;
- 
+   
     li{
         white-space: nowrap;
         display: block;
-        
         padding: 8px 22px;
+        border: 1px solid transparent;
+        border-radius: 5px;
     font-weight: normal;
     font-size: 16px;
  line-height: 24px;
  letter-spacing: -0.2px;
-  color: $link-color;
+  color: $color-pale-blue;
+  
  cursor: pointer;
+ transition: border-color 0.2s ease;
     }
-    
+
 }
 .services-nav__item.active{
-    border: 1px solid #41F6D7;
-    border-radius: 5px;
+    background: $color-white;
+    border: 1px solid $color-light-turquoise;
+    
 }
 .servise-info{
     display: flex;

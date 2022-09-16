@@ -1,18 +1,21 @@
 .repair__list{
-display: flex;
-flex-wrap: wrap;
-min-width: 1100px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
 margin-bottom: 24px;
 overflow: hidden;
 max-height: 160px;
+
 }
 .repair__item{
-    margin-right: 32px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    background: $color-white;
+
     a{
         height: 160px;
-        min-width: 224px;
-        padding-top: 16px;
-        padding-left: 16px;
+       padding: 16px;
+       width: 100% !important;
         display: block;
         position: relative;
         &::before{
@@ -23,10 +26,10 @@ max-height: 160px;
             width: 40px;
             height: 40px;
             border-radius: 100%;
-            border: 2px solid #FF3E79;
+            border: 2px solid $color-radical-red;
             display: inline-block;
             position: absolute;
-            right: 16px;
+            right: 0%;
             bottom: 16px;
             margin-right: 16px;
         }

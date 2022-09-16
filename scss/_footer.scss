@@ -2,13 +2,13 @@
     margin-left: 320px;
     display: flex;
     justify-content: space-between;
-    
+    background: $color-smoky-white;
     p{
         a{
             font-weight: normal;
             opacity: 0.72;
        &:hover{
-        border-bottom: 1px solid #7E7E82;
+        border-bottom: 1px solid $color-pale-blue;
        }
         }
         flex-wrap: wrap;
@@ -20,7 +20,7 @@
         font-size: 14px;
         // white-space: nowrap;
 line-height: 16px;
-color: #7E7E82;
+color: $color-pale-blue;
 mix-blend-mode: normal;
 opacity: 0.72;
 text-align: end;
@@ -32,7 +32,7 @@ span{
     position: absolute;
     left: 31px;
     font-weight: normal;
-    color: #7E7E82;
+    color: $color-pale-blue;
 mix-blend-mode: normal;
 text-align: end;
 }

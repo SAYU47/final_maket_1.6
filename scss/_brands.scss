@@ -7,8 +7,8 @@ h2{
 line-height: 24px;
 letter-spacing: -0.2px;
 text-transform: uppercase;
-
-color: #7E7E82;
+background: linear-gradient(-270deg, $color-smoky-white 0%, $color-white 98.61%) ;
+color: $color-pale-blue;
 border-top: 1px solid  #D9FFF5;
 border-bottom: 1px solid  #D9FFF5;
 }
@@ -16,14 +16,19 @@ border-bottom: 1px solid  #D9FFF5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 24px;
-    max-height: 150px;
+    max-height: 170px;
     overflow: hidden;
 }
 .brand__item{
+    margin-bottom: 16px;
+    margin-right: 32px;
     
 a{
     display: flex;
+    background: $color-white;
     align-items: center;
+    border-radius: 3px;
+    border: 1px solid $color-shade-of-gray;
     height: 72px;
     min-width: 210px;
     width: 100%;
@@ -38,7 +43,7 @@ a{
         width: 40px;
         height: 40px;
         border-radius: 100%;
-        border: 2px solid #FF3E79;
+        border: 2px solid $color-radical-red;
         
         position: absolute;
         right: 0;

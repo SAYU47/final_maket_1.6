@@ -5,32 +5,34 @@
 .price-caption{
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding: 0px 16px 0px 16px;
     li{
+        
         font-size: 14px;
 line-height: 16px;
-color: #7E7E82;
+color: $color-pale-blue;
 mix-blend-mode: normal;
 opacity: 0.72;
-margin-bottom: 39px;
     }
 }
 .price-sublist{
+padding: 25px 16px 25px 16px;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
-    margin-bottom: 47px;
+    
     li{
         font-weight: normal;
         font-weight: 400;
 font-size: 14px;
 line-height: 18px;
 letter-spacing: 0.2px;
-color: #1B1C21;
+color: $color-blue-black;
     }
 }
 
 .price-sublist__item a:hover:after{
-    border-bottom: 2px solid #FF3E79;
-    border-left: 2px solid #FF3E79;
+    border-bottom: 2px solid $color-radical-red;
+    border-left: 2px solid $color-radical-red;
 }
 .price-description{
        max-width: 421px;
@@ -42,8 +44,9 @@ color: #1B1C21;
 .price-description__link{
     position: relative;
     font-weight: normal;
+    transition: border-bottom 0.2s ease;
     &:hover{
-        border-bottom: 2px solid #FF3E79;
+        border-bottom: 2px solid $color-radical-red;
     }
 &::after{
     content: "";
@@ -52,8 +55,8 @@ color: #1B1C21;
     top: 29%;
     width: 9px;
     height: 9px;
-    border-bottom: 2px solid #FF3E79;
-    border-left: 2px solid #FF3E79;
+    border-bottom: 2px solid $color-radical-red;
+    border-left: 2px solid $color-radical-red;
     transform: rotate(-136deg);
 }
 }
@@ -66,6 +69,8 @@ color: #1B1C21;
 }
 .price-subitem{
     display: flex;
+  align-items: center;
+   
     span{
         display: none;
     }
@@ -76,13 +81,13 @@ line-height: 24px;
 text-align: right;
 letter-spacing: -0.15px;
 text-transform: uppercase;
-color: #FFFFFF;
+color: $color-white;
         display: block;
         padding: 4px 40px 4px 12px;
-        color: #FFFFFF;
-        background: #FF3E79;
+        color: $color-white;
+        background: $color-radical-red;
         border-radius: 16px;
-        border: 2px solid #FF3E79;
+        border: 2px solid $color-radical-red;
         position: relative;
         text-transform: uppercase;
         transition: 0.3s;
@@ -93,17 +98,17 @@ color: #FFFFFF;
             top: 13px;
             width: 5px;
             height: 5px;
-            border-bottom: 2px solid #fff;
-            border-left: 2px solid #fff;
+            border-bottom: 2px solid $color-white;
+            border-left: 2px solid $color-white;
             transform: rotate(-136deg);
             transition: border-color 0.2s ease;
         }
         &:hover{
-            color: #FF3E79;
-            background: #FFFFFF;
+            color: $color-radical-red;
+            background: $color-white;
             &::after{
-                border-bottom: 2px solid #FF3E79;
-                border-left: 2px solid #FF3E79;
+                border-bottom: 2px solid $color-radical-red;
+                border-left: 2px solid $color-radical-red;
             }
         }
 
@@ -112,4 +117,14 @@ color: #FFFFFF;
 .price-list{
     display: flex;
     flex-direction: column;
+   margin-bottom: 32px;
+    li{
+        
+        border-radius: 3px;
+        border: 1px solid $color-shade-of-gray;
+    }
+}
+.price-item{
+    background: $color-white;
+    
 }

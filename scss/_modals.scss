@@ -1,5 +1,5 @@
 input:focus{
-outline: 1px solid #FF3E79;
+outline: 1px solid $color-radical-red;
 }
 
 .modal{
@@ -7,7 +7,7 @@ outline: 1px solid #FF3E79;
     position: fixed;
     top: 0;
     right: 0;
-    background: #fff;
+    background: $color-white;
     z-index: 1000;
  
 }
@@ -28,13 +28,13 @@ outline: 1px solid #FF3E79;
     left: -22%;
     width: 38px;
     height: 38px;
-    border: 2px solid #FF3E79;
+    border: 2px solid $color-radical-red;
     border-radius: 50%;
-    background-color: #FF3E79;
+    background-color: $color-radical-red;
     cursor: pointer;
     transition: background-color 0.2s;
     &:hover{
-        background-color: #fff;
+        background-color: $color-white;
     }
     &::before{
             content: "";
@@ -44,7 +44,7 @@ outline: 1px solid #FF3E79;
             width: 2px;
             height: 30px;
             border-radius: 2px;
-            background-color: #fff;
+            background-color: $color-white;
             transform: rotate(45deg);
             transition: background-color 0.2s
     }
@@ -56,17 +56,17 @@ outline: 1px solid #FF3E79;
             width: 2px;
             height: 30px;
             border-radius: 2px;
-            background-color: #fff;
+            background-color: $color-white;
             transform: rotate(-45deg);
             transition: background-color 0.2s
         }
     }
 .close:hover{
     &::after {
-        background-color: #FF3E79;
+        background-color: $color-radical-red;
     }
     &::before{
-        background-color: #FF3E79;
+        background-color: $color-radical-red;
     }
 }
 .heading{
@@ -75,7 +75,7 @@ font-size: 24px;
 line-height: 32px;
 /* identical to box height, or 133% */
 letter-spacing: -0.6px;
-color: #1B1C21;
+color: $color-blue-black;
 
 position: relative;
 margin-bottom: 24px;
@@ -86,7 +86,7 @@ margin-bottom: 24px;
     left: -26px;
     width: 4px;
     height: 40px;
-background-color: #41F6D7;
+background-color: $color-light-turquoise;
 border-radius: 2px;
 
 }
@@ -96,19 +96,19 @@ border-radius: 2px;
         position: relative;
         display: flex;
         float: right;
-        background-color: #FF3E79;
+        background-color: $color-radical-red;
         padding: 4px 30px 4px 17px;
-        color: #fff;
+        color: $color-white;
         border-radius: 16px;
-        border: 2px solid #FF3E79;
+        border: 2px solid $color-radical-red;
         transition: 0.4s ease;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: bold;
         &:hover{
             
-            background-color: #fff;
-            color: #FF3E79;
+            background-color: $color-white;
+            color: $color-radical-red;
         }
         &::after{
             content: "";
@@ -117,16 +117,16 @@ border-radius: 2px;
     top: 10px;
     width: 9px;
     height: 9px;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-bottom: 2px solid $color-white;
+    border-left: 2px solid $color-white;
     transform: rotate(-136deg);
 }
     }
 }
 .btn:hover::after{  
     transition: 0.4s ease;  
-    border-bottom: 2px solid #FF3E79;
-    border-left: 2px solid #FF3E79;
+    border-bottom: 2px solid $color-radical-red;
+    border-left: 2px solid $color-radical-red;
 }
 .modal__container-input{
     width: 100%;
@@ -138,18 +138,18 @@ line-height: 24px;
 letter-spacing: -0.2px;
 
 margin-bottom: 16px;
-border: 1px solid #EAEAEA;
+border: 1px solid $color-shade-of-gray;
 border-radius: 8px;
    }
 .modal__info{
 font-weight: normal;
 font-size: 14px;
-color: #7E7E82;
+color: $color-pale-blue;
 line-height: 16px;
 
 a{
     font-weight: normal;
-    color: #FF3E79 ;
+    color: $color-radical-red ;
 }
 }
 @media (max-width: 500px){

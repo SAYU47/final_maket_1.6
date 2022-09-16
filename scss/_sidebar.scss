@@ -8,7 +8,7 @@
     position: fixed;
     height: 100vh;
     padding: 30px 20px;
-    
+    background: $color-white;
 }
 .menu-burger-btn{
     display: none;
@@ -32,9 +32,11 @@ height: 100vh;
     letter-spacing: -0.2px;
     cursor: pointer;
     span{
+        transition: 0.4s ease;
+        border-bottom: 2px solid transparent;
         margin-left: 10px;
         &:hover{
-        border-bottom: 2px solid #41F6D7;
+        border-color: $color-light-turquoise;
         }
     }
 }
@@ -42,17 +44,19 @@ height: 100vh;
   span{
     opacity: 0.6;
   }
-        border-left: 4px solid #41F6D7;
+        border-left: 4px solid $color-light-turquoise;
     
 }
 
 .sidebar-contact{
     margin-top: auto;
     margin-bottom: 41px;
+    
 }
 .sidebar-contact__feedback{
     margin-bottom: 16px;
     a{
+        
         margin-right: 16px;
         &:last-child{
             margin-right: 0;
@@ -67,13 +71,14 @@ height: 100vh;
      font-size: 24px;
 line-height: 32px;
 letter-spacing: -0.6px;
-color: #1B1C21;
+color: $color-blue-black;
 margin-top: 10px;
 display: block;
 
 }
 .sidebar-contact__info{
     a{
+        transition: 0.4s ease;
         &:hover{
             &:hover{
                 opacity: 0.7;
@@ -88,6 +93,7 @@ display: block;
         font-weight: normal;
         margin-right: 7px;
         cursor: pointer;
+        transition: 0.4s ease;
         &:hover{
             font-weight: bold;
         }
@@ -100,7 +106,7 @@ display: block;
     a{
         &:hover{
             
-            border-bottom: 2px solid #41F6D7;
+            border-bottom: 2px solid $color-light-turquoise;
         }
     
     }

@@ -240,7 +240,7 @@ if (!x.matches)  { new Swiper('.brands-swiper', {
     el: '.swiper-scrollbar',
   },
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 34,
 });
 
 } else if(x.matches){
@@ -260,6 +260,7 @@ if (!x.matches)  { new Swiper('.repairs-swiper', {
     el: '.swiper-scrollbar',
   },
   slidesPerView: 1,
+  spaceBetween: 105,
 });
 
 } else if(x.matches){

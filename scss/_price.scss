@@ -1,0 +1,115 @@
+.price-section{
+    border-bottom: 1px solid  #D9FFF5;
+    padding-bottom: 50px;
+}
+.price-caption{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    li{
+        font-size: 14px;
+line-height: 16px;
+color: #7E7E82;
+mix-blend-mode: normal;
+opacity: 0.72;
+margin-bottom: 39px;
+    }
+}
+.price-sublist{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    margin-bottom: 47px;
+    li{
+        font-weight: normal;
+        font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.2px;
+color: #1B1C21;
+    }
+}
+
+.price-sublist__item a:hover:after{
+    border-bottom: 2px solid #FF3E79;
+    border-left: 2px solid #FF3E79;
+}
+.price-description{
+       max-width: 421px;
+    p{
+        font-weight: normal;
+        padding-bottom: 20px;
+    }
+}
+.price-description__link{
+    position: relative;
+    font-weight: normal;
+    &:hover{
+        border-bottom: 2px solid #FF3E79;
+    }
+&::after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 29%;
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #FF3E79;
+    border-left: 2px solid #FF3E79;
+    transform: rotate(-136deg);
+}
+}
+@media (max-width: 387px){
+    .price-description__link{
+    &::after{
+        top: 60%;
+}
+}
+}
+.price-subitem{
+    display: flex;
+    span{
+        display: none;
+    }
+    button{
+        font-weight: bold;
+ font-size: 12px;
+line-height: 24px;
+text-align: right;
+letter-spacing: -0.15px;
+text-transform: uppercase;
+color: #FFFFFF;
+        display: block;
+        padding: 4px 40px 4px 12px;
+        color: #FFFFFF;
+        background: #FF3E79;
+        border-radius: 16px;
+        border: 2px solid #FF3E79;
+        position: relative;
+        text-transform: uppercase;
+        transition: 0.3s;
+        &::after{
+            content: "";
+            position: absolute;
+            right: 16px;
+            top: 13px;
+            width: 5px;
+            height: 5px;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            transform: rotate(-136deg);
+            transition: border-color 0.2s ease;
+        }
+        &:hover{
+            color: #FF3E79;
+            background: #FFFFFF;
+            &::after{
+                border-bottom: 2px solid #FF3E79;
+                border-left: 2px solid #FF3E79;
+            }
+        }
+
+    }
+    }
+.price-list{
+    display: flex;
+    flex-direction: column;
+}

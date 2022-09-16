@@ -1,0 +1,40 @@
+.footer-container{
+    margin-left: 320px;
+    display: flex;
+    justify-content: space-between;
+    
+    p{
+        a{
+            font-weight: normal;
+            opacity: 0.72;
+       &:hover{
+        border-bottom: 1px solid #7E7E82;
+       }
+        }
+        flex-wrap: wrap;
+        font-weight: normal;
+        padding-bottom: 21px ;
+        padding-top: 32px;
+        padding-left: 31px;
+        padding-right: 24px;
+        font-size: 14px;
+        // white-space: nowrap;
+line-height: 16px;
+color: #7E7E82;
+mix-blend-mode: normal;
+opacity: 0.72;
+text-align: end;
+position: relative;
+&:last-child{
+max-width: 300px;
+}
+span{
+    position: absolute;
+    left: 31px;
+    font-weight: normal;
+    color: #7E7E82;
+mix-blend-mode: normal;
+text-align: end;
+}
+    }
+}

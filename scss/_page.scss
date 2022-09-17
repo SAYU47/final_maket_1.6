@@ -1,6 +1,6 @@
 main{
     margin-left: 320px;
-    overflow-x: hidden;
+    
     
 }
 .servise{
@@ -29,7 +29,8 @@ color: $color-blue-black;
 }
 .menu__list{
 display: flex;
-// z-index: 11;
+z-index: 11;
+
 }
 
 h1{

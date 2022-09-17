@@ -15,7 +15,7 @@ border-bottom: 1px solid  #D9FFF5;
 .brand__list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
+    margin-bottom: 20px;
     max-height: 170px;
     overflow: hidden;
 }
@@ -33,6 +33,8 @@ border-bottom: 1px solid  #D9FFF5;
     height: 72px;   
     flex-shrink: 0;
     padding-left: 16px;
+    cursor: pointer;
+    
     span{
         display: block;
         background-image: url("../img/arrowright.svg");

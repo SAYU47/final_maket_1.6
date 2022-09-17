@@ -262,6 +262,7 @@ h1::before {
   position: fixed;
   height: 100vh;
   background: #fff;
+  padding: 30px 20px;
 }
 
 .sidebar.active {
@@ -276,7 +277,6 @@ h1::before {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 30px 20px;
 }
 
 .sidebar-logo__container {

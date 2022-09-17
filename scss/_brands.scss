@@ -15,42 +15,40 @@ border-bottom: 1px solid  #D9FFF5;
 .brand__list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 24px;
+    
     max-height: 170px;
     overflow: hidden;
 }
 .brand__item{
-    margin-bottom: 16px;
-    margin-right: 16px;
-    
-a{
+    margin-right: 5%;
+}
+.brand__item-container{
     display: flex;
+    margin-bottom: 24px;
     background: $color-white;
     align-items: center;
+    justify-content: space-between;
     border-radius: 3px;
     border: 1px solid $color-shade-of-gray;
-    height: 72px;
-    min-width: 210px;
-    width: 100%;
+    height: 72px;   
     flex-shrink: 0;
-    position: relative;
     padding-left: 16px;
-    &::after{
-        content: '';
+    span{
+        display: block;
         background-image: url("../img/arrowright.svg");
         background-repeat: no-repeat;
         background-position: center;
         width: 40px;
         height: 40px;
-        border-radius: 100%;
+        border-radius: 50%;
         border: 2px solid $color-radical-red;
-        
-        position: absolute;
-        right: 0;
         margin-right: 16px;
     }
 }
-
+.brand__item-img{
+    min-width: 22%;
+    max-width: 100%;
+    height: auto;
 }
 .show-all-btn{
     margin-bottom: 50px;

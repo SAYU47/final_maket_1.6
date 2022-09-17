@@ -1,6 +1,7 @@
 .price-section{
-    border-bottom: 1px solid  #D9FFF5;
+    
     padding-bottom: 50px;
+    
 }
 .price-caption{
     display: grid;
@@ -16,7 +17,8 @@ opacity: 0.72;
     }
 }
 .price-sublist{
-padding: 25px 16px 25px 16px;
+    background: $color-white;
+padding: 25px 16px 24px 12px;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
     
@@ -44,7 +46,8 @@ color: $color-blue-black;
 .price-description__link{
     position: relative;
     font-weight: normal;
-    transition: border-bottom 0.2s ease;
+    transition: border-color 0.2s ease;
+    border-bottom: 2px solid transparent;
     &:hover{
         border-bottom: 2px solid $color-radical-red;
     }
@@ -70,7 +73,6 @@ color: $color-blue-black;
 .price-subitem{
     display: flex;
   align-items: center;
-   
     span{
         display: none;
     }
@@ -118,10 +120,11 @@ color: $color-white;
     display: flex;
     flex-direction: column;
    margin-bottom: 32px;
+  
     li{
-        
+        padding-left: 16px;
+        padding-right: 16px;      
         border-radius: 3px;
-        border: 1px solid $color-shade-of-gray;
     }
 }
 .price-item{

@@ -380,40 +380,42 @@ h2 {
 .brand__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 24px;
   max-height: 170px;
   overflow: hidden;
 }
 
 .brand__item {
-  margin-bottom: 16px;
-  margin-right: 16px;
+  margin-right: 5%;
 }
-.brand__item a {
+
+.brand__item-container {
   display: flex;
+  margin-bottom: 24px;
   background: #fff;
   align-items: center;
+  justify-content: space-between;
   border-radius: 3px;
   border: 1px solid #EAEAEA;
   height: 72px;
-  min-width: 210px;
-  width: 100%;
   flex-shrink: 0;
-  position: relative;
   padding-left: 16px;
 }
-.brand__item a::after {
-  content: "";
+.brand__item-container span {
+  display: block;
   background-image: url("../img/arrowright.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 40px;
   height: 40px;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 2px solid #FF3E79;
-  position: absolute;
-  right: 0;
   margin-right: 16px;
+}
+
+.brand__item-img {
+  min-width: 22%;
+  max-width: 100%;
+  height: auto;
 }
 
 .show-all-btn {
@@ -462,7 +464,6 @@ h2 {
 }
 
 .price-section {
-  border-bottom: 1px solid #D9FFF5;
   padding-bottom: 50px;
 }
 
@@ -480,7 +481,8 @@ h2 {
 }
 
 .price-sublist {
-  padding: 25px 16px 25px 16px;
+  background: #fff;
+  padding: 25px 16px 24px 12px;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
 }
@@ -509,7 +511,8 @@ h2 {
 .price-description__link {
   position: relative;
   font-weight: normal;
-  transition: border-bottom 0.2s ease;
+  transition: border-color 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
 .price-description__link:hover {
   border-bottom: 2px solid #FF3E79;
@@ -583,8 +586,9 @@ h2 {
   margin-bottom: 32px;
 }
 .price-list li {
+  padding-left: 16px;
+  padding-right: 16px;
   border-radius: 3px;
-  border: 1px solid #EAEAEA;
 }
 
 .price-item {

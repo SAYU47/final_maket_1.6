@@ -25,11 +25,11 @@ showBrands.addEventListener("click", function (evt) {
 	brandsList.classList.toggle("active");
 	if (brandsList.classList.contains("active")) {
 		showBrands.innerHTML = "Скрыть";
-		showBrands.classList.remove("show-all-btn");
+		showBrands.classList.remove("read-all-btn");
 		showBrands.classList.add("hide-all-btn");
 	} else {
 		showBrands.innerHTML = "Показать всё";
-		showBrands.classList.add("show-all-btn");
+		showBrands.classList.add("read-all-btn");
 		showBrands.classList.remove("hide-all-btn");
 	}
 });

@@ -63,9 +63,8 @@ h2 {
 
 .show-all-btn {
 	margin-bottom: 50px;
-
 	&::before {
-		content: url("img/arrowDown.svg");
+		content: url("../img/arrowDown.svg");
 		padding-right: 16px;
 	}
 }

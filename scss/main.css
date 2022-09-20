@@ -424,7 +424,7 @@ h2 {
   margin-bottom: 50px;
 }
 .show-all-btn::before {
-  content: url("img/arrowDown.svg");
+  content: url("../img/arrowDown.svg");
   padding-right: 16px;
 }
 

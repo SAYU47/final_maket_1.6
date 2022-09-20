@@ -1,133 +1,128 @@
-.price-section{
-    
-    padding-bottom: 50px;
-    
+.price-section {
+	padding-bottom: 50px;
 }
-.price-caption{
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    padding: 0px 16px 0px 16px;
-    li{
-        
-        font-size: 14px;
-line-height: 16px;
-color: $color-pale-blue;
-mix-blend-mode: normal;
-opacity: 0.72;
-    }
+.price-caption {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	padding: 0px 16px 0px 16px;
+	li {
+		font-size: 14px;
+		line-height: 16px;
+		color: $color-pale-blue;
+		mix-blend-mode: normal;
+		opacity: 0.72;
+	}
 }
-.price-sublist{
-    background: $color-white;
-padding: 25px 16px 24px 12px;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    
-    li{
-        font-weight: normal;
-        font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: 0.2px;
-color: $color-blue-black;
-    }
+.price-sublist {
+	background: $color-white;
+	padding: 25px 16px 24px 12px;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+
+	li {
+		font-weight: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.2px;
+		color: $color-blue-black;
+	}
 }
 
-.price-sublist__item a:hover:after{
-    border-bottom: 2px solid $color-radical-red;
-    border-left: 2px solid $color-radical-red;
+.price-sublist__item a:hover:after {
+	border-bottom: 2px solid $color-radical-red;
+	border-left: 2px solid $color-radical-red;
 }
-.price-description{
-       max-width: 421px;
-    p{
-        font-weight: normal;
-        padding-bottom: 20px;
-    }
+.price-description {
+	max-width: 421px;
+	p {
+		font-weight: normal;
+		padding-bottom: 20px;
+	}
 }
-.price-description__link{
-    position: relative;
-    font-weight: normal;
-    transition: border-color 0.2s ease;
-    border-bottom: 2px solid transparent;
-    &:hover{
-        border-bottom: 2px solid $color-radical-red;
-    }
-&::after{
-    content: "";
-    position: absolute;
-    right: -15px;
-    top: 29%;
-    width: 9px;
-    height: 9px;
-    border-bottom: 2px solid $color-radical-red;
-    border-left: 2px solid $color-radical-red;
-    transform: rotate(-136deg);
+.price-description__link {
+	position: relative;
+	font-weight: normal;
+	transition: border-color 0.2s ease;
+	border-bottom: 2px solid transparent;
+	&:hover {
+		border-bottom: 2px solid $color-radical-red;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		right: -15px;
+		top: 29%;
+		width: 9px;
+		height: 9px;
+		border-bottom: 2px solid $color-radical-red;
+		border-left: 2px solid $color-radical-red;
+		transform: rotate(-136deg);
+	}
 }
+@media (max-width: 387px) {
+	.price-description__link {
+		&::after {
+			top: 60%;
+		}
+	}
 }
-@media (max-width: 387px){
-    .price-description__link{
-    &::after{
-        top: 60%;
+.price-subitem {
+	display: flex;
+	align-items: center;
+	span {
+		display: none;
+	}
+	button {
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 24px;
+		text-align: right;
+		letter-spacing: -0.15px;
+		text-transform: uppercase;
+		color: $color-white;
+		display: block;
+		padding: 4px 40px 4px 12px;
+		color: $color-white;
+		background: $color-radical-red;
+		border-radius: 16px;
+		border: 2px solid $color-radical-red;
+		position: relative;
+		text-transform: uppercase;
+		transition: 0.3s;
+		&::after {
+			content: "";
+			position: absolute;
+			right: 16px;
+			top: 13px;
+			width: 5px;
+			height: 5px;
+			border-bottom: 2px solid $color-white;
+			border-left: 2px solid $color-white;
+			transform: rotate(-136deg);
+			transition: border-color 0.2s ease;
+		}
+		&:hover {
+			color: $color-radical-red;
+			background: $color-white;
+			&::after {
+				border-bottom: 2px solid $color-radical-red;
+				border-left: 2px solid $color-radical-red;
+			}
+		}
+	}
 }
-}
-}
-.price-subitem{
-    display: flex;
-  align-items: center;
-    span{
-        display: none;
-    }
-    button{
-        font-weight: bold;
- font-size: 12px;
-line-height: 24px;
-text-align: right;
-letter-spacing: -0.15px;
-text-transform: uppercase;
-color: $color-white;
-        display: block;
-        padding: 4px 40px 4px 12px;
-        color: $color-white;
-        background: $color-radical-red;
-        border-radius: 16px;
-        border: 2px solid $color-radical-red;
-        position: relative;
-        text-transform: uppercase;
-        transition: 0.3s;
-        &::after{
-            content: "";
-            position: absolute;
-            right: 16px;
-            top: 13px;
-            width: 5px;
-            height: 5px;
-            border-bottom: 2px solid $color-white;
-            border-left: 2px solid $color-white;
-            transform: rotate(-136deg);
-            transition: border-color 0.2s ease;
-        }
-        &:hover{
-            color: $color-radical-red;
-            background: $color-white;
-            &::after{
-                border-bottom: 2px solid $color-radical-red;
-                border-left: 2px solid $color-radical-red;
-            }
-        }
+.price-list {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
 
-    }
-    }
-.price-list{
-    display: flex;
-    flex-direction: column;
-   margin-bottom: 32px;
-  
-    li{
-        padding-left: 16px;
-        padding-right: 16px;      
-        border-radius: 3px;
-    }
+	li {
+		padding-left: 16px;
+		padding-right: 16px;
+		border-radius: 3px;
+	}
 }
-.price-item{
-    background: $color-white;
-    
+.price-item {
+	background: $color-white;
 }

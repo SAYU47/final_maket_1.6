@@ -1,41 +1,41 @@
-header{
-    display: none;  
+header {
+	display: none;
 }
-.header-submit{
-    visibility: visible;
-    margin-right: 160px;
-    z-index: 11;
-    a{
-        margin-right: 16px;
-    }
+.header-submit {
+	visibility: visible;
+	margin-right: 160px;
+	z-index: 11;
+	a {
+		margin-right: 16px;
+	}
 }
-.header-submit.active{
-    visibility: hidden;
+.header-submit.active {
+	visibility: hidden;
 }
-.menu-burger-btn{
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   background-color: $color-radical-red ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-    span{
-        position: absolute;
-        left: 11px;
-        width: 10px;
-        height: 2px;
-        background-color: $color-white;
-        &:nth-last-child(1){
-            position: absolute;
-            bottom: 12px;
-            width: 14px;
-        }
-        &:first-child{
-            position: absolute;
-            top: 12px;
-            width: 18px;
-        }
-    }
+.menu-burger-btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: $color-radical-red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	span {
+		position: absolute;
+		left: 11px;
+		width: 10px;
+		height: 2px;
+		background-color: $color-white;
+		&:nth-last-child(1) {
+			position: absolute;
+			bottom: 12px;
+			width: 14px;
+		}
+		&:first-child {
+			position: absolute;
+			top: 12px;
+			width: 18px;
+		}
+	}
 }

@@ -1,37 +1,38 @@
-.repair__list{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-margin-bottom: 24px;
-overflow: hidden;
-max-height: 160px;
-
+.repair__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-bottom: 24px;
+	overflow: hidden;
+	max-height: 160px;
 }
-.repair__item{
-    margin-right: 24px;
-    margin-bottom: 16px;
-    display: flex;
-    background: $color-white;
 
-    a{
-        height: 160px;
-       padding: 16px;
-       width: 100% !important;
-        display: block;
-        position: relative;
-        &::before{
-            content: '';
-            background-image: url("../img/arrowright.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 100%;
-            border: 2px solid $color-radical-red;
-            display: inline-block;
-            position: absolute;
-            right: 0%;
-            bottom: 16px;
-            margin-right: 16px;
-        }
-        }
-    }
+.repair__item {
+	margin-right: 24px;
+	margin-bottom: 16px;
+	display: flex;
+	background: $color-white;
+
+	a {
+		height: 160px;
+		padding: 16px;
+		width: 100% !important;
+		display: block;
+		position: relative;
+
+		&::before {
+			content: "";
+			background-image: url("../img/arrowright.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+			border: 2px solid $color-radical-red;
+			display: inline-block;
+			position: absolute;
+			right: 0%;
+			bottom: 16px;
+			margin-right: 16px;
+		}
+	}
+}

@@ -1,62 +1,71 @@
-h2{
-    margin-bottom: 44px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-weight: normal;
-    font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.2px;
-text-transform: uppercase;
-background: linear-gradient(-270deg, $color-smoky-white 0%, $color-white 98.61%) ;
-color: $color-pale-blue;
-border-top: 1px solid  #D9FFF5;
-border-bottom: 1px solid  #D9FFF5;
-}
-.brand__list{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 20px;
-    max-height: 170px;
-    overflow: hidden;
-}
-.brand__item{
-    margin-right: 5%;
-}
-.brand__item-container{
-    display: flex;
-    margin-bottom: 24px;
-    background: $color-white;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 3px;
-    border: 1px solid $color-shade-of-gray;
-    height: 72px;   
-    flex-shrink: 0;
-    padding-left: 16px;
-    cursor: pointer;
-    
-    span{
-        display: block;
-        background-image: url("../img/arrowright.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 2px solid $color-radical-red;
-        margin-right: 16px;
-    }
-}
-.brand__item-img{
-    min-width: 22%;
-    max-width: 100%;
-    height: auto;
-}
-.show-all-btn{
-    margin-bottom: 50px;
-    &::before{
-        content:url('img/arrowDown.svg');
-        padding-right: 16px;
-    }
+h2 {
+	margin-bottom: 44px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	background: linear-gradient(
+		-270deg,
+		$color-smoky-white 0%,
+		$color-white 98.61%
+	);
+	color: $color-pale-blue;
+	border-top: 1px solid #d9fff5;
+	border-bottom: 1px solid #d9fff5;
 }
 
+.brand__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-bottom: 20px;
+	max-height: 170px;
+	overflow: hidden;
+}
+
+.brand__item {
+	margin-right: 5%;
+}
+
+.brand__item-container {
+	display: flex;
+	margin-bottom: 24px;
+	background: $color-white;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 3px;
+	border: 1px solid $color-shade-of-gray;
+	height: 72px;
+	flex-shrink: 0;
+	padding-left: 16px;
+	cursor: pointer;
+
+	span {
+		display: block;
+		background-image: url("../img/arrowright.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 2px solid $color-radical-red;
+		margin-right: 16px;
+	}
+}
+
+.brand__item-img {
+	min-width: 22%;
+	max-width: 100%;
+	height: auto;
+}
+
+.show-all-btn {
+	margin-bottom: 50px;
+
+	&::before {
+		content: url("img/arrowDown.svg");
+		padding-right: 16px;
+	}
+}

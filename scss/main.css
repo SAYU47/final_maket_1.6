@@ -33,8 +33,8 @@
 body {
   position: relative;
   height: 100%;
+  width: 100%;
   max-width: 1440px;
-  min-width: 300px;
   margin: 0 auto;
   background: #f2f2f2;
 }
@@ -664,7 +664,6 @@ h2 {
   .sidebar-wrapper.active {
     transform: translateX(0);
     z-index: 13;
-    width: 320px;
     background: #fff;
     box-shadow: 16px 0px 4px -4px rgba(14, 24, 80, 0.2);
   }
@@ -693,17 +692,17 @@ h2 {
   }
   .sidebar.active {
     visibility: visible;
-    width: 30%;
-    background: white;
+    width: 100%;
+    background: linear-gradient(to right, #fff 0% 350px, rgba(255, 255, 255, 0.9) 350px);
   }
   .sidebar-hidden {
     position: absolute;
-    left: 100px;
-    width: 1720px;
-    height: 100vh;
-    background: #000;
+    right: 0;
+    width: 70%;
+    height: 100%;
     opacity: 52%;
     cursor: pointer;
+    overflow-x: hidden;
   }
   .menu-burger-btn {
     display: flex;

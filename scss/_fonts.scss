@@ -43,8 +43,9 @@ $font-stack: "TT Lakes";
 body {
 	position: relative;
 	height: 100%;
-	max-width: 1440px;
-	min-width: 300px;
+	width: 100%;
+  max-width: 1440px;
 	margin: 0 auto;
 	background: #f2f2f2;
+	// overflow-x: hidden !important;
 }

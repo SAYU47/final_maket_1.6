@@ -20,7 +20,7 @@
 	.sidebar-wrapper {
 		transition: 0.5s;
 		transform: translateX(-110%);
-		height: 90vh;
+		height: 85vh;
 
 		width: 320px;
 	}
@@ -175,6 +175,7 @@
 	}
 	.sidebar.active {
 		background: $color-white;
+		padding-top: 0px;
 	}
 	.menu__list {
 		position: absolute;
@@ -268,6 +269,14 @@
 		}
 	}
 	.menu__list.active {
+		display: none;
+	}
+	.sidebar-wrapper.active{
+		box-shadow: none;
+	}
+}
+@media (max-width: 678px){
+	.header-submit{
 		display: none;
 	}
 }

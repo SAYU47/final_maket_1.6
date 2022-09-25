@@ -344,6 +344,7 @@ h1::before {
 
 .sidebar-language__list {
   display: flex;
+  padding-top: 2%;
 }
 .sidebar-language__list li {
   font-weight: normal;
@@ -658,7 +659,7 @@ h2 {
   .sidebar-wrapper {
     transition: 0.5s;
     transform: translateX(-110%);
-    height: 90vh;
+    height: 85vh;
     width: 320px;
   }
   .sidebar-wrapper.active {
@@ -808,6 +809,7 @@ h2 {
   }
   .sidebar.active {
     background: #fff;
+    padding-top: 0px;
   }
   .menu__list {
     position: absolute;
@@ -896,6 +898,14 @@ h2 {
     left: 60px;
   }
   .menu__list.active {
+    display: none;
+  }
+  .sidebar-wrapper.active {
+    box-shadow: none;
+  }
+}
+@media (max-width: 678px) {
+  .header-submit {
     display: none;
   }
 }
